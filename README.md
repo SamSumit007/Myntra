@@ -4,7 +4,7 @@ Myntra is a major Indian fashion e-commerce company of India. An online Shopping
 
 _To start with the Project run the following command in terminal 
 
-> > ⌘ **npm run dev**
+> > ⌘ `**npm run dev**`
 
 > After that you are ready to go and explore my project.
 
