@@ -1,13 +1,6 @@
 import { Container, PaginationItem } from "@mui/material";
 import React, { useEffect, useState, useContext } from "react";
 
-import List from "@mui/material/List";
-import ListItem from "@mui/material/ListItem";
-import ListItemButton from "@mui/material/ListItemButton";
-import ListItemIcon from "@mui/material/ListItemIcon";
-import ListItemText from "@mui/material/ListItemText";
-import Checkbox from "@mui/material/Checkbox";
-import Divider from "@mui/material/Divider";
 import Card from "@mui/material/Card";
 import CardActions from "@mui/material/CardActions";
 import CardContent from "@mui/material/CardContent";
@@ -15,8 +8,6 @@ import CardMedia from "@mui/material/CardMedia";
 import Button from "@mui/material/Button";
 import Typography from "@mui/material/Typography";
 import FavoriteIcon from "@mui/icons-material/Favorite";
-import ArrowBackIcon from "@mui/icons-material/ArrowBack";
-import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
 import CircularProgress from "@mui/material/CircularProgress";
 
 import { db } from "../firebase";
@@ -93,7 +84,6 @@ const Products = ({ data }) => {
          </div>
 
          <Container style={{ display: "flex" }}>
-            {/* Left Sidebar */}
 
             {loading ? (
                <CircularProgress
@@ -105,53 +95,8 @@ const Products = ({ data }) => {
                />
             ) : (
                <>
-                  {/* <Sorting /> */}
 
-                  {/* <div className="sidebar" style={{ flexBasis: "16rem" }}>
-                     <List
-                        sx={{
-                           width: "100%",
-                           maxWidth: 360,
-                           bgcolor: "background.paper",
-                        }}
-                     >
-                        <Divider />
-                        <h2>Brands</h2>
-
-                        {info.map((value) => {
-                           const labelId = `checkbox-list-label-${value.brand}`;
-
-                           return (
-                              <ListItem key={value.brand} disablePadding>
-                                 <ListItemButton
-                                    role={undefined}
-                                    onClick={handleToggle(value.brand)}
-                                    dense
-                                 >
-                                    <ListItemIcon style={{ minWidth: 0 }}>
-                                       <Checkbox
-                                          edge="start"
-                                          checked={
-                                             checked.indexOf(value.brand) !== -1
-                                          }
-                                          tabIndex={-1}
-                                          disableRipple
-                                          inputProps={{
-                                             "aria-labelledby": labelId,
-                                          }}
-                                       />
-                                    </ListItemIcon>
-                                    <ListItemText
-                                       id={labelId}
-                                       primary={`${value.brand}`}
-                                    />
-                                 </ListItemButton>
-                              </ListItem>
-                           );
-                        })}
-                     </List>
-                  </div> */}
-                  {/* Right side container */}
+                 
 
                   <div className="productContainer">
                      {info.map((e) => {
@@ -159,7 +104,6 @@ const Products = ({ data }) => {
                            <Card sx={{ maxWidth: 275 }}>
                               <CardMedia
                                  component="img"
-                                 // height="140"
                                  image={e.link}
                                  alt={e.title}
                                  loading="lazy"
@@ -173,7 +117,6 @@ const Products = ({ data }) => {
                               >
                                  <Typography
                                     gutterBottom
-                                    // variant="h6"
                                     component="div"
                                     sx={{
                                        marginBottom: 0,
@@ -213,7 +156,6 @@ const Products = ({ data }) => {
                                     <Typography
                                        sx={{
                                           fontSize: 14,
-                                          //   fontWeight: "bold",
                                           textDecoration: "line-through",
                                           marginLeft: 2,
                                        }}
@@ -247,7 +189,6 @@ const Products = ({ data }) => {
                                     sx={{
                                        backgroundColor: "#ff3e6b",
                                        color: "white",
-                                       // fontWeight: "bold",
                                        borderColor: "#ff3e6b",
                                        textTransform: "capitalize",
                                        ":hover": {
@@ -291,12 +232,7 @@ const Products = ({ data }) => {
                      })}
                      <Pagination
                         count={(info.length / 10).toFixed(0)}
-                        // renderItem={(item) => (
-                        //   <PaginationItem
-                        //     components={{ previous: ArrowBackIcon, next: ArrowForwardIcon }}
-                        //     {...info}
-                        //   />
-                        // )}
+                        
                         style={{
                            padding: 20,
                            width: "100%",
@@ -308,15 +244,7 @@ const Products = ({ data }) => {
                </>
             )}
 
-            {/* <DataGrid
-        pagination
-        pageSize={10}
-        rowsPerPageOptions={[10]}
-        components={{
-          Pagination: CustomPagination,
-        }}
-        {...info}
-      /> */}
+          
          </Container>
       </>
    );

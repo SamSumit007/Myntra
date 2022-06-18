@@ -8,8 +8,6 @@ import { KidsNav } from "./MiniNavbar/KidsNav";
 import { HomeLivingNav } from "./MiniNavbar/HomeLivingNav";
 import { BeautyNav } from "./MiniNavbar/BeautyNav";
 import { StudioNav } from "./MiniNavbar/Studio";
-import { useContext, useEffect, useState } from "react";
-import { AuthContext } from "../../Context/AuthContext";
 import { useAuth } from "../../Context/AuthContext";
 
 const Div = styled.nav`
@@ -41,7 +39,6 @@ export const Navbar = () => {
                      width: "75%",
                      height: "50px",
                      marginLeft: "30%",
-                     // marginRight: "30%",
                   }}
                   src={Myntra_logo}
                   alt=""
@@ -60,7 +57,6 @@ export const Navbar = () => {
                      paddingBottom: "10px",
                      paddingLeft: "20px",
                      paddingRight: "5px",
-                     //   hoverBorderBottom:"5px solid #ee5f73"
                   }}
                   to="/men"
                >
@@ -111,13 +107,11 @@ export const Navbar = () => {
                <KidsNav></KidsNav>
             </div>
 
-            {/* <Link style={{ marginLeft: "2%", fontWeight: "bold", fontSize: "17px", textDecoration: "none", color: '#282C3F' }} to="/homeandkitchen">Home & Living</Link> */}
 
             <div className="link1">
                <Link
                   className="link home"
                   style={{
-                     //   marginLeft: "3%",
                      fontWeight: "bold",
                      fontSize: "14px",
                      textDecoration: "none",
@@ -176,7 +170,6 @@ export const Navbar = () => {
                <StudioNav></StudioNav>
             </div>
 
-            {/* <p className="nw">NEW</p> */}
 
             <div className="inp1">
                <input
@@ -224,7 +217,6 @@ export const Navbar = () => {
                   textDecoration: "none",
                   color: "#282C3F",
                }}
-               // to="/cart"
                to="/bag" 
             >
                {" "}

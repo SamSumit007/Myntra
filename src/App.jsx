@@ -21,7 +21,6 @@ function App() {
 
    return (
       <div className="App">
-         {/* <Navbar /> */}
          {Location.pathname === "/bag" ||
          Location.pathname === "/address" ||
          Location.pathname === "/payment" ? (
@@ -56,11 +55,9 @@ function App() {
             <Route path="/login" element={<Login />}></Route>
 
             <Route
-               // path="/cart"
                path="/bag"
                element={
                   <PrivateComponent>
-                     {/* <Cart /> */}
                      <Fullbagpage />
                   </PrivateComponent>
                }

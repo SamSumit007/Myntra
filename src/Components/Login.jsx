@@ -35,7 +35,6 @@ export default function Signup() {
          style={{
             width: "30%",
             margin: "auto",
-           // height: "40vh",
             marginTop: "10%",
             marginBottom: "3%",
             borderRadius:"2%",
@@ -46,12 +45,10 @@ export default function Signup() {
       >
         
 
-         {/*Bootstrap  */}
          <Container>
          <img style={{width:"100%",marginBottom:"5%"}}
                src="https://assets.myntassets.com/f_webp,dpr_1.5,q_60,w_400,c_limit,fl_progressive/assets/images/2022/3/16/d4edb37c-aee8-4989-86f4-33b117edd4bc1647415464555-Banner_Login-Landing-page--1-.jpg"></img>
             <Card>
-               {/* <h2>Log In</h2> */}
                {error && <Alert variant="danger">{error}</Alert>}
 
                <Card.Body>

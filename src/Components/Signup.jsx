@@ -1,9 +1,8 @@
 import React, { useRef, useState } from "react";
 import { useAuth } from "../Context/AuthContext";
 import { Link, useNavigate } from "react-router-dom";
-import { Form, Button, Card, Alert, Container } from "react-bootstrap";
+import { Form, Button, Card, Alert, } from "react-bootstrap";
 
-// import { Alert, Button } from "@mui/material";
 
 export default function Signup() {
    const [values, setValues] = React.useState({
@@ -11,16 +10,7 @@ export default function Signup() {
       showPassword: false,
    });
 
-   // const handleChange = (prop) => (event) => {
-   //   setValues({ ...values, [prop]: event.target.value });
-   // };
-
-   // const handleClickShowPassword = () => {
-   //   setValues({
-   //     ...values,
-   //     showPassword: !values.showPassword,
-   //   });
-   // };
+  
 
    const handleMouseDownPassword = (event) => {
       event.preventDefault();
