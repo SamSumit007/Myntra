@@ -10,7 +10,7 @@ _To start with the Project run the following command in terminal
 
 ---
 ---
-
+<!-- 
 ## Tech Stack Used : -
 
 - #### Languages
@@ -60,3 +60,4 @@ _To start with the Project run the following command in terminal
 ### Deploy Link
 
 # Myntra
+ -->
