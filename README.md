@@ -58,6 +58,6 @@ https://drive.google.com/file/d/1WBz3z5R2pfMzBJJbGDwZKVZcifEgtjoj/view?usp=shari
 
 
 ### Deploy Link
-
+https://myntra-one.vercel.app/
 # Myntra
  -->
