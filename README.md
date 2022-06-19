@@ -54,10 +54,10 @@ _To start with the Project run the following command in terminal
 
 
 ### Google Drive Link
-
+https://drive.google.com/file/d/1WBz3z5R2pfMzBJJbGDwZKVZcifEgtjoj/view?usp=sharing
 
 
 ### Deploy Link
-
+https://myntra-one.vercel.app/
 # Myntra
  -->
